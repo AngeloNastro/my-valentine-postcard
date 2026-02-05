@@ -118,8 +118,8 @@ function showYesMessage() {
   setTimeout(() => {
     container.innerHTML = `
       <h1 style="font-size:2.2rem;">Yay! 💖</h1>
-      <p style="font-size:1.3rem;margin:24px 0 8px 0;">I love you so much</p>
-      <p style="font-size:1.1rem;color:#e75480;opacity:0.85;">Today, tomorrow, forever.</p>
+      <p style="font-size:1.3rem;margin:24px 0 8px 0;">Ti amo tanto!</p>
+      <p style="font-size:1.1rem;color:#e75480;opacity:0.85;">Oggi, domani, per sempre.</p>
     `;
     container.style.opacity = '1';
   }, 700);
