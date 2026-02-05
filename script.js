@@ -51,7 +51,10 @@ function showYesMessage() {
   `;
 }
 yesBtn.addEventListener('click', showYesMessage);
-yesBtn.addEventListener('touchend', function(e) {
-  e.preventDefault();
+// Touch support for mobile: use both touchend and touchstart for best compatibility
+yesBtn.addEventListener('touchend', function() {
   showYesMessage();
-}, {passive: false});
+});
+yesBtn.addEventListener('touchstart', function() {
+  showYesMessage();
+});
