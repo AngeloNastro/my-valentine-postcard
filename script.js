@@ -93,13 +93,13 @@ function showYesMessage() {
 
   // Floating hearts
   const heartEmojis = ['💖', '💘', '💝', '💕', '💞', '💓', '💗', '💙', '💜', '💚', '❤️', '🧡', '💛'];
-  for (let i = 0; i < 16; i++) {
+  for (let i = 0; i < 50; i++) {
     const heart = document.createElement('div');
     heart.className = 'floating-heart';
     heart.textContent = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
     
     const angle = Math.random() * 2 * Math.PI;
-    const radius = 40 + Math.random() * 120;
+    const radius = 70 + Math.random() * 120;
     heart.style.left = `${x + Math.cos(angle) * radius}px`;
     heart.style.top = `${y + Math.sin(angle) * radius}px`;
     heart.style.fontSize = `${1.8 + Math.random() * 1.6}rem`;

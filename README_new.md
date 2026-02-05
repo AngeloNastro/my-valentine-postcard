@@ -15,6 +15,7 @@ A cute and interactive Valentine's Day card built with vanilla HTML, CSS, and Ja
 ## 🚀 Quick Start
 
 1. Clone this repository:
+
    ```bash
    git clone <repository-url>
    cd my\ valentine\ postcard
@@ -41,16 +42,21 @@ A cute and interactive Valentine's Day card built with vanilla HTML, CSS, and Ja
 ## 🎨 Customization
 
 ### Change the recipient name
+
 Edit the `<h1>` in `index.html`:
+
 ```html
 <h1>Daniela, vuoi essere il mio Valentine?</h1>
 ```
 
 ### Customize the "No" messages
+
 Edit the `noMessages` array in `script.js` to add your own funny rejection messages.
 
 ### Adjust colors
+
 Modify the color values in `style.css`:
+
 - Primary pink: `#ff1493`
 - Background gradient: `#e89faa`, `#ffb6c1`, etc.
 
@@ -70,7 +76,7 @@ Modify the color values in `style.css`:
 ## 🎯 How It Works
 
 1. **Yes Button**: Triggers a celebration with floating hearts and an animated background
-2. **No Button**: 
+2. **No Button**:
    - Desktop: Moves away on hover
    - Mobile: Moves away on tap/click
    - Cycles through funny messages each time
