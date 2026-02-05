@@ -50,11 +50,11 @@ function showYesMessage() {
     <p style="font-size:1.1rem;color:#e75480;opacity:0.85;">Today, tomorrow, forever.</p>
   `;
 }
+// Use pointer events for best cross-device compatibility
 yesBtn.addEventListener('click', showYesMessage);
-// Touch support for mobile: use both touchend and touchstart for best compatibility
-yesBtn.addEventListener('touchend', function() {
-  showYesMessage();
-});
-yesBtn.addEventListener('touchstart', function() {
-  showYesMessage();
+yesBtn.addEventListener('pointerup', function(e) {
+  // Only trigger on direct tap/click, not pointermove
+  if (e.pointerType === 'touch' || e.pointerType === 'pen') {
+    showYesMessage();
+  }
 });
