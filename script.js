@@ -43,10 +43,15 @@ noBtn.addEventListener('touchstart', function(e) {
   moveNoButton();
 }, {passive: false});
 
-yesBtn.addEventListener('click', () => {
+function showYesMessage() {
   document.querySelector('.container').innerHTML = `
     <h1>Yay!</h1>
     <p style="font-size:1.3rem;margin:24px 0 8px 0;">I love you so much</p>
     <p style="font-size:1.1rem;color:#e75480;opacity:0.85;">Today, tomorrow, forever.</p>
   `;
-});
+}
+yesBtn.addEventListener('click', showYesMessage);
+yesBtn.addEventListener('touchend', function(e) {
+  e.preventDefault();
+  showYesMessage();
+}, {passive: false});
