@@ -1,3 +1,31 @@
+@media (max-width: 350px) {
+  .container {
+    width: 98vw;
+    padding: 16px 2vw 16px 2vw;
+    min-height: 140px;
+    border-radius: 14px;
+  }
+  h1 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  .buttons {
+    gap: 10px;
+    margin-top: 8px;
+  }
+  button {
+    font-size: 0.85rem;
+    padding: 8px 0;
+    border-radius: 16px;
+  }
+  .container::before, .container::after {
+    font-size: 0.9rem;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+  }
+}
 @media (max-width: 500px) {
   .container {
     min-width: 0;
