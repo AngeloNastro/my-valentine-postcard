@@ -1,0 +1,11 @@
+{
+  "name": "my-valentine-postcard",
+  "version": "1.0.0",
+  "description": "A cute, interactive Valentine’s Day card for GitHub Pages.",
+  "scripts": {
+    "start": "live-server --open=index.html"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
